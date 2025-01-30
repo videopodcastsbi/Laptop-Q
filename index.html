@@ -13,25 +13,28 @@
 
 <body class="min-h-screen">
     
-    <div class="h-[600px] bg-headers bg-no-repeat bg-cover relative">
+    <div class="h-[600px] bg-headers bg-no-repeat bg-fixed bg-cover relative">
         <div class="absolute h-[600px] inset-0 bg-black bg-opacity-30">
             <div class="relative">
-                <nav id="navbar" class="w-[95%] py-5 mx-auto flex justify-between items-center">
+                <nav id="navbar" class="w-full py-5 px-5 flex justify-between items-center flex-wrap fixed top-0 transition-all duration-300">
                     <div class="flex gap-4 items-center">
-                        <img src="img/logo.png" class="h-20" alt="Logo Laptop Q">
-                        <p class="text-white text-4xl">Laptop Q</p>
+                        <img src="img/logo.png" class="h-16" alt="Logo Laptop Q">
+                        <p class="text-white text-2xl">Laptop Q</p>
                     </div>
-                    <div class="flex gap-5">
-                        <a href="#" class="text-white hover:text-gray-400 text-3xl">Home</a>
-                        <a href="#" class="text-white hover:text-gray-400 text-3xl">Blog</a>
-                        <a href="#" class="text-white hover:text-gray-400 text-3xl">
+                    <button id="tombol" class="lg:hidden block text-white text-2xl">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <div class=" gap-5 hidden lg:flex lg:flex-row flex-col w-full mt-6 text-center lg:w-[12%]" id="menu">
+                        <a href="#" class="text-white hover:text-gray-400 text-xl">Home</a>
+                        <a href="#" class="text-white hover:text-gray-400 text-xl">Blog</a>
+                        <a href="#" class="text-white hover:text-gray-400 text-xl">
                             <i class="fa-solid fa-magnifying-glass"></i>
                         </a>
                     </div>
                 </nav>
                 <div class="h-[400px] flex justify-center items-center flex-col gap-6">
-                    <h1 class="text-9xl font-bold text-white">Laptop Q</h1>
-                    <p class="text-gray-200 text-2xl">Teman Kerja dan Gaming? Laptop Q Jawabannya!</p>
+                    <h1 class="lg:text-9xl text-5xl font-bold text-white">Laptop Q</h1>
+                    <p class="text-gray-200 text-2xl mx-5 text-center">Teman Kerja dan Gaming? Laptop Q Jawabannya!</p>
                 </div>
             </div>
         </div>
@@ -39,7 +42,7 @@
 
     <div class="w-[80%] mx-auto py-16">
         <h2 class="text-5xl font-bold text-center mb-10">KENALI LAPTOP Q</h2>
-        <div class="flex items-center gap-10">
+        <div class="flex flex-col lg:flex-row items-center gap-10">
             <img src="img/laptopstopicpage-2048px-3685-2x1-1.jpg" alt="Laptop Q" class="h-[250px]">
             <div class="flex flex-col justify-center">
                 <h3 class="text-3xl font-bold text-red-600 mb-4">Laptop Q</h3>
@@ -56,14 +59,14 @@
     <section class="py-10 bg-lime-200">
         <div class="w-[80%] mx-auto">
             <h2 class="text-3xl text-center text-white font-bold mb-10">PENGENALAN PRODUK</h2>
-            <div class="flex justify-between gap-6">
+            <div class="flex flex-col lg:flex-row justify-between gap-6">
                 <div class="flex flex-col gap-8">
                     <img src="img/Laptop gaming.jpg" alt="Laptop Performa Tinggi" class="h-[300px]">
                     <h3 class="text-2xl text-center text-white font-bold">Performa Tinggi</h3>
                     <p class="text-2xl text-black">Ditenagai prosesor terbaru dan GPU kelas atas untuk gaming tanpa
                         hambatan.</p>
                 </div>
-                <div class="flex flex-col gap-8">
+                <div class="flex flex-col  gap-8">
                     <img src="img/layar berkualitas.jpg" alt="Layar Berkualitas" class="h-[300px]">
                     <h3 class="text-2xl text-center text-white font-bold">Layar Berkualitas</h3>
                     <p class="text-2xl text-black">Resolusi tinggi dengan refresh rate cepat untuk visual yang tajam dan
@@ -84,8 +87,8 @@
             <h2 class="text-2xl text-center text-red-600 font-bold mb-10">
                 Laptop Q - Pilihan Terbaik! Diskon hingga 20%! Stok terbatas, pesan sekarang!
             </h2>
-            <div class="flex justify-between gap-6">
-                <div class="flex flex-col gap-7 w-1/4">
+            <div class="flex flex-col lg:flex-row justify-between gap-6">
+                <div class="flex flex-col gap-7 lg:w-1/4">
                     <img src="https://img.freepik.com/free-photo/still-life-books-versus-technology_23-2150062920.jpg"
                         class="h-[250px]" alt="Laptop Q">
                     <h3 class="text-2xl text-center text-black font-bold">Laptop Q</h3>
@@ -95,11 +98,11 @@
                     </div>
                     <button
                         class="w-full bg-gray-500 p-3 text-xl text-black font-bold rounded-md mt-5 gap-4 hover:bg-gray-800">
-                        Beli Ga!? </button>
+                        Buy Now! </button>
                 </div>
 
-                <div class="flex flex-col gap-7 w-1/4">
-                    <img src="https://img.freepik.com/free-photo/still-life-books-versus-technology_23-2150062920.jpg"
+                <div class="flex flex-col gap-7 lg:w-1/4">
+                    <img src="img/laptop Qe.jpg"
                         class="h-[250px]" alt="Laptop Q">
                     <h3 class="text-2xl text-center text-black font-bold">Laptop Q</h3>
                     <div class="flex gap-8">
@@ -108,11 +111,11 @@
                     </div>
                     <button
                         class="w-full bg-gray-500 p-3 text-xl text-white font-bold rounded-md mt-5 gap-4 hover:bg-gray-800">
-                        Beli Ga!? </button>
+                        Buy Now! </button>
                 </div>
 
-                <div class="flex flex-col gap-7 w-1/4">
-                    <img src="https://img.freepik.com/free-photo/still-life-books-versus-technology_23-2150062920.jpg"
+                <div class="flex flex-col gap-7 lg:w-1/4">
+                    <img src="img/laptop-gaming-murah.jpg"
                         class="h-[250px]" alt="Laptop Q">
                     <h3 class="text-2xl text-center text-black font-bold">Laptop Q</h3>
                     <div class="flex gap-8">
@@ -121,7 +124,7 @@
                     </div>
                     <button
                         class="w-full bg-gray-500 p-3 text-xl text-white font-bold rounded-md mt-5 gap-4 hover:bg-gray-800">
-                        Beli Ga!? </button>
+                        Buy Now! </button>
                 </div>
                 
             </div>
@@ -130,7 +133,7 @@
     <section class="py-10 bg-lime-200">
         <div class="w-[80%] mx-auto">
             <h2 class="text-3xl text-center text-white font-bold mb-10">TESTIMONI MONEY PEMBELI</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+            <div class="flex-col lg:flex-row grid grid-cols-1 md:grid-cols-3 gap-10">
                 <div class="flex flex-col items-center gap-6 bg-white p-6 rounded-lg shadow-lg">
                     <img src="https://cdn.pixabay.com/photo/2019/08/11/18/59/icon-4399701_1280.png" alt="Laptop Performa Tinggi" class="h-[200px] w-[200px] object-cover rounded-lg shadow-md">
                     <h3 class="text-2xl text-center text-black font-bold">Arya Saputra, Jakarta</h3>
@@ -150,7 +153,7 @@
         </div>
     </section>
     <section class="py-10 bg-black">
-        <div class="flex w-[80%] mx-auto justify-between">
+        <div class="flex w-[80%] mx-auto justify-between flex-col lg:flex-row gap-10">
             <div class="flex flex-col gap-7">
                 <h3 class="text-2xl font-bold text-white">Laptop Q</h3>
                 <div class="flex gap-5">
@@ -200,6 +203,8 @@
     <footer class="text-center  bg-black text-white text-xl py-10">
         &copy; 2025 Laptop Q. All rights reserved. Design by Qeis Rafifadzra.
     </footer>
+
+    <script src="main.js"></script>
 </body>
 
 </html>
